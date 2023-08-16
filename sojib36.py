@@ -74,7 +74,7 @@ bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "0
 done = False
 def up():
     for up in range(999):
-        print(" \033[1;92m  PLEASE WAIT YOUR NEXT UPDATE ")
+        pri
         time.sleep(0.1)
 class jihad:
     def __init__(self, z):
